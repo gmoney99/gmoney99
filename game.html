@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link href= "stylesheet.css" type="text/css" rel= "stylesheet"/> 
+<!--    <link href= "stylesheet.css" type="text/css" rel= "stylesheet"/> -->
     </head>
 <body>
 
@@ -12,11 +12,42 @@
 <img id="myImage" onclick="changeImage()" src="playbuttom.png" width="250" height="250">
 
 </div>
+    
 
 
 
     
-<script>
+<script> 
+    
+    function preload() {
+        game.load.image('background', 'background.png .png') 
+        game.load.image('start', 'playbuttom.png')
+        game.load.image('carblue', 'carblue.png')
+        game.load.image('cargreen', 'cargreen.png')
+        game.load.image('caryellow', 'caryellow.png')
+        game.load.image('coin', 'coins.png')
+        game.load.image('flag', 'startofrace.png')
+    }
+    
+    var player;
+    var tree;
+    var cursor; 
+    var coins; 
+    var score = 0;
+    var scoreText; 
+    var cars; 
+    
+ function create
+     //  We're going to be using physics, so enable the Arcade Physics system
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+
+    
+    
+    
+
+    
+    
+    
 function changeImage() {
     var image = document.getElementById('myImage');
     if (image.src.match("play")) {
