@@ -1,0 +1,11 @@
+body{
+     background-image: url(background.png%20.png) ;
+ background-size: 1500px 900px;
+    background-repeat: no-repeat;
+}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+<img id="myImage" onclick="changeImage()" src="playbuttom.png" width="150" height="150">
+

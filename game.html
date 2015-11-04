@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href= "stylesheet.css" type="text/css" rel= "stylesheet"/> 
+    </head>
+<body>
+
+
+
+
+<div id="myimage" style="float: center middle; width: 604px; position: center mid;">
+<img id="myImage" onclick="changeImage()" src="playbuttom.png" width="250" height="250">
+
+</div>
+
+
+
+    
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("play")) {
+        image.src = "startofrace.png";
+    } else {
+        image.src = "playbuttom.png";
+    }
+}
+
+</script>
+
+</body>
+</html>
+
