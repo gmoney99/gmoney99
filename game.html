@@ -20,7 +20,7 @@
 <script> 
     
     function preload() {
-        game.load.image('background', 'background.png .png') 
+        game.load.image('sky', 'sky.png') 
         game.load.image('start', 'playbuttom.png')
         game.load.image('carblue', 'carblue.png')
         game.load.image('cargreen', 'cargreen.png')
@@ -39,10 +39,10 @@
     
  function create
      //  We're going to be using physics, so enable the Arcade Physics system
-    game.physics.startSystem(Phaser.Physics.ARCADE);
-    //  A simple background for our game
-    game.add.sprite('background');
-
+        game.physics.startSystem(Phaser.Physics.ARCADE);
+    
+   // this is going to be the sky 
+        game.add.sprite(0,0)'sky'  
     
     
     
